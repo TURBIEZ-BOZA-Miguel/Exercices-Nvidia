@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-size: 15px;
+}
+
+#container{
+    max-width: 1024px;
+    margin: auto;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+header{
+    display: flex;
+}
+header nav{
+    padding-bottom: 1em;
+    display: flex;
+    flex: 1;/* va allonger la nav au maximum de l'espace dispo dans header */
+    justify-content: space-evenly;/* horizontal */
+    align-items: flex-end;/* vertical */
+}
+
+#banner{
+    margin: 0;
+    height: 300px;
+    position: relative;
+}
+
+.banner-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;/*remplir l'espace de #banner avec l'image*/
+}
+
+#banner figcaption{
+    color: white;
+    background-color:rgba(35,150,14, 0.5);
+    padding: 0.5em 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#banner figcaption .btn{
+    float: right;
+}
+
+main{
+    display: flex;
+    border-bottom:#6aa821 solid 2px;
+}
+
+aside{
+    background-color:#6aa821;
+    color:white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    
+}
+.btn {    
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    border-radius: 10px;
+    background-color: #6aa821;
+    text-decoration: white;
+    border-bottom: black 1px;
+}
+
+#name{
+    margin-bottom: 6px;
+}
+
+.triangle{
+    position:absolute;
+    bottom:-192px;
+    left: 800px;
+    
+}
+
+.facebook{
+    color: white;
+}
+
+.btn2 {
+    position: relative;
+    bottom:20px;
+    left: 180px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    background-color: #6aa821;
+    text-decoration: white;
+}
+
+.space{
+    word-spacing: 10px;
+}
